@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>devio.Umbraco8.SimpleScrewTurnWiki</id>
+    <version>1.0.0</version>
+    <authors>devio</authors>
+    <owners>devio</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">GPL-3.0-only</license>
+    <!--licenseUrl>https://github.com/Askanio/STW6/blob/master/LICENSE</licenseUrl-->
+    <projectUrl>https://github.com/devio-at</projectUrl>
+    <iconUrl>https://devio.at/favicon.ico</iconUrl>
+    <description>Simple ScrewTurnWiki Markup Parser for Umbraco 8.</description>
+    <copyright>Copyright devio © 2020</copyright>
+    <tags>Umbraco, ScrewTurnWiki</tags>
+    <repository type="git" url="https://github.com/skybrud/Skybrud.Umbraco.Redirects" />
+    <dependencies>
+      <group targetFramework=".NETFramework4.7.2">
+        <dependency id="UmbracoCms.Web" version="8.1.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+	<files>
+		<file src="..\devio.Umbraco8.SimpleScrewTurnWiki\bin\Debug\devio.Umbraco8.SimpleScrewTurnWiki.dll" target="lib\net472" />
+		<file src="..\devio.Umbraco8.SimpleScrewTurnWiki\bin\Debug\ScrewTurn.Wiki.Core.dll" target="lib\net472" />
+		<file src="..\devio.Umbraco8.SimpleScrewTurnWiki\bin\Debug\ScrewTurn.Wiki.AclEngine.dll" target="lib\net472" />
+		<file src="..\devio.Umbraco8.SimpleScrewTurnWiki\bin\Debug\ScrewTurn.Wiki.PluginFramework.dll" target="lib\net472" />
+		<file src="..\devio.Umbraco8.SimpleScrewTurnWiki\bin\Debug\SearchEngine.dll" target="lib\net472" />
+    <file src=".\views.web.config.transform" target="content\Views\web.config.transform" />
+  </files>
+</package>
